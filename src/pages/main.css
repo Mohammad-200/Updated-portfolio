@@ -1,0 +1,50 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.main-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1f1d;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.main-left-container {
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10%;
+}
+
+.portfolio-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Great Vibes";
+  font-size: 25px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.creativity-sentence {
+  max-width: 260px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.my-role {
+  font-weight: bold;
+  font-size: 20px;
+}
