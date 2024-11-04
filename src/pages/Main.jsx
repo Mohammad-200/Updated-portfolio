@@ -1,30 +1,48 @@
 import React from "react";
 import "./main.css";
-import crownImage from "../images/crown-2.jpg";
 
 function Main() {
   return (
     <div className="main-container">
-      <div className="main-left">
-        <div className="main-left-container">
-          <div className="portfolio-logo">
-            <img className="logo" src={crownImage} />
-            <p className="portfolio-name">Mohammad Kizawi</p>
+      <div className="centered-container">
+        <div className="main-left">
+          <div>
+            <label>Profile</label>
+            <p>
+              Work for money and program for love! I'm Mohammad, a
+              <span> Full stack</span> developer based in Romania
+            </p>
           </div>
-          <p className="creativity-sentence">Be creative, Be Impressive</p>
-          <p className="my-role">Creative Designer and Full stack Developer</p>
-          <p>
-            Fun fact, this picture is not me, the AI promised this is what I'd
-            look like in 10 years, but for now, I'm just coding myself into my
-            future shape. Let's hope debugging doesn't involve any mirrors!
-          </p>
-          <div className="main-buttons">
-            <button className="resume-btn">Resume</button>
-            <button className="contact-btn">Contact</button>
+          <div>
+            <label>Contact</label>
+            <p>mohammad.kizawi@gmail.com</p>
+            <p>+40724952701</p>
+          </div>
+          <div>
+            <label>Services</label>
+            <p>Frontend developer</p>
+            <p>backend developer</p>
+          </div>
+        </div>
+        <div className="main-pic">
+          <img src="images/personal-image.jpeg" />
+          <div className="image-border"></div>
+        </div>
+        <div className="main-right" style={{ textAlign: "right" }}>
+          <div>
+            <label>Years of experience</label>
+            <p className="big-font">2</p>
+          </div>
+          <div>
+            <label>Work Satisfaction</label>
+            <p className="big-font">100%</p>
+          </div>
+          <div>
+            <label>Projects done</label>
+            <p className="big-font">+100</p>
           </div>
         </div>
       </div>
-      <div className="main-right">right</div>
     </div>
   );
 }

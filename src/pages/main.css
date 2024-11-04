@@ -1,50 +1,104 @@
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 100vh;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
-
-.main-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e1f1d;
-  padding: 100px 0;
-  color: #ffffff;
+  width: 100%;
+  padding: 40px 0px;
 }
 
-.main-left-container {
-  max-width: 500px;
-  height: 100%;
+.centered-container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.main-left,
+.main-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: 10%;
+  flex-grow: 1;
+  gap: 60px;
+  color: #333;
+  max-width: 310px;
 }
 
-.portfolio-logo {
+.main-left label,
+.main-right label {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #1b1b1b99;
+}
+
+.main-left p,
+.main-right p {
+  line-height: 1.6;
+  color: #000000;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.big-font {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-left span,
+.main-right span {
+  font-weight: 700;
+  color: #333;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 12px rgba(173, 216, 230, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(173, 216, 230, 1);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(173, 216, 230, 0.5);
+  }
+}
+
+.main-pic {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: "Great Vibes";
-  font-size: 25px;
-}
-
-.logo {
-  width: 45px;
-  height: 45px;
+  justify-content: center;
+  width: 420px;
+  height: 520px;
   border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: glow 2s infinite;
 }
 
-.creativity-sentence {
-  max-width: 260px;
-  font-size: 35px;
-  font-weight: bold;
+.main-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.my-role {
-  font-weight: bold;
-  font-size: 20px;
+.image-border {
+  position: absolute;
+  width: 450px;
+  height: 550px;
+  border-radius: 50%;
+  border: 1px solid rgba(55, 55, 55, 0.758);
+  border-style: dotted;
+}
+
+@media (max-width: 992px) {
+  .centered-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-left,
+  .main-right {
+    text-align: center;
+  }
 }
