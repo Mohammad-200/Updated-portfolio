@@ -1,5 +1,6 @@
 .main-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -89,6 +90,30 @@
   border-radius: 50%;
   border: 1px solid rgba(55, 55, 55, 0.758);
   border-style: dotted;
+}
+
+.main-companies-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  padding: 40px 60px;
+}
+
+.main-companies-logos img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.end-line {
+  width: 80%;
+  height: 1px;
+  border-radius: 10%;
+  background-color: #000000;
+  margin: 10px auto;
 }
 
 @media (max-width: 992px) {
