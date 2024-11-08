@@ -26,7 +26,7 @@ function Recommendation() {
           <div className="internship-content">
             <p>
               Working in a <span className="bold">design company</span> with
-              professional designers taught me to see things from a
+              professional designers helped me to see things from a
               <span className="bold"> unique perspective, </span>
               focusing on <span className="bold"> user experience </span> and
               details.
@@ -45,12 +45,17 @@ function Recommendation() {
           </div>
         </div>
         <div className="rec-right">
-          <div className="cursor" onClick={openPdfModal}></div>
-          <img
-            className="holder-pic"
-            src="images/letter-2.jpeg"
-            alt="Recommendation letter"
-          />
+          <p className="glow-sentence" style={{ fontSize: "18px" }}>
+            Click the letter to open it!
+          </p>
+          <div className="image-holder">
+            <div className="cursor" onClick={openPdfModal}></div>
+            <img
+              className="holder-pic"
+              src="images/letter-2.jpeg"
+              alt="Recommendation letter"
+            />
+          </div>
         </div>
       </div>
 
@@ -66,7 +71,7 @@ function Recommendation() {
           </div>
         </div>
       )}
-      <div className="end-line" style={{ height: "2px" }}></div>
+      <div className="end-line"></div>
     </>
   );
 }
