@@ -4,6 +4,8 @@
   align-items: center;
   padding: 20px 80px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  max-width: 2200px;
+  margin: 0 auto;
 }
 
 .nav {

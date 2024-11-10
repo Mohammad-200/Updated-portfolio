@@ -45,9 +45,7 @@ function Recommendation() {
           </div>
         </div>
         <div className="rec-right">
-          <p className="glow-sentence" style={{ fontSize: "18px" }}>
-            Click the letter to open it!
-          </p>
+          <p className="glow-sentence">Click the letter to open it!</p>
           <div className="image-holder">
             <div className="cursor" onClick={openPdfModal}></div>
             <img

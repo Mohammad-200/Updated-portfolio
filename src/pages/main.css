@@ -5,15 +5,18 @@
   align-items: center;
   width: 100%;
   padding: 40px 0px;
+  max-width: 2200px;
+  margin: 0 auto;
 }
 
 .centered-container {
   display: flex;
   gap: 40px;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  padding: 0 80px;
 }
 
 .main-left,
@@ -26,12 +29,18 @@
   max-width: 310px;
 }
 
+.main-right {
+  text-align: right;
+  gap: 35px;
+}
+
 .main-left label,
 .main-right label {
   display: inline-block;
   font-size: 1.2em;
   font-weight: 600;
   color: #1b1b1b99;
+  text-transform: capitalize;
 }
 
 .main-left p,
@@ -110,13 +119,53 @@
 
 .end-line {
   width: 80%;
-  height: 1px;
+  height: 2px;
   border-radius: 10%;
   background-color: #000000;
   margin: 10px auto;
+  max-width: 2200px;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 1250px) {
+  .main-pic {
+    width: 320px;
+    height: 420px;
+  }
+
+  .image-border {
+    width: 350px;
+    height: 450px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .main-pic {
+    display: none;
+  }
+  .centered-container {
+    justify-content: center;
+    align-items: start;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-companies-logos {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-left p {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+  }
+
+  .main-right p {
+    font-size: 1.2rem;
+  }
+
   .centered-container {
     flex-direction: column;
     align-items: center;

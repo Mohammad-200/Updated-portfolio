@@ -97,7 +97,7 @@ function Experience() {
           </div>
         </div>
       </div>
-      <div className="end-line" style={{ height: "2px" }}></div>
+      <div className="end-line"></div>
     </>
   );
 }

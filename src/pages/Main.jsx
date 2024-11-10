@@ -29,7 +29,7 @@ function Main() {
             <img src="images/personal-image.jpeg" />
             <div className="image-border"></div>
           </div>
-          <div className="main-right" style={{ textAlign: "right" }}>
+          <div className="main-right">
             <div>
               <label>Years of experience</label>
               <p className="big-font">2</p>
@@ -40,7 +40,11 @@ function Main() {
             </div>
             <div>
               <label>Projects done</label>
-              <p className="big-font">+100</p>
+              <p className="big-font">+120</p>
+            </div>
+            <div>
+              <label>Languages Spoken</label>
+              <p className="big-font">3</p>
             </div>
           </div>
         </div>
