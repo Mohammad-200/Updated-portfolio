@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
 import Main from "./pages/Main";
 import Projects from "./pages/Projects";
@@ -13,6 +14,7 @@ function App() {
       <Experience />
       <Recommendation />
       <Projects />
+      <Contact />
     </>
   );
 }

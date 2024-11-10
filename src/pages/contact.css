@@ -1,0 +1,156 @@
+/* Contact */
+
+#contact {
+  padding: 40px 0;
+  text-align: center;
+  color: #333;
+  margin-top: 40px;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.email-link {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.contact h2 {
+  font-size: 35px;
+}
+
+.contact span {
+  font-size: 20px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  overflow: hidden;
+  place-items: center;
+}
+
+.contact-left-title {
+  font-weight: 600;
+  color: #1e1f1d;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  max-width: 120px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  max-height: 300px;
+  min-height: 100px;
+  padding-top: 15px;
+  padding-left: 25px;
+  border-radius: 20px;
+  max-width: 100%;
+  border: #000 solid 2px;
+}
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-inputs:focus {
+  border: 3px solid #1e1f1d;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-left button:hover {
+  background-color: #ffffff;
+  color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+.showOnMobile {
+  display: none;
+  visibility: hidden;
+}
+
+.contact-right img {
+  max-width: 500px;
+  transition: all 0.3s ease;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .contact-inputs {
+    width: 300px;
+  }
+
+  .contact-right img {
+    width: 400px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
+
+  .contact-left textarea {
+    width: 80vw;
+    max-width: 90vw;
+  }
+}
