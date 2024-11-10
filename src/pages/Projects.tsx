@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./projects.css";
 import { IoDiamond } from "react-icons/io5";
 
 function Projects() {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handleVideoToggle = () => {
+    setShowVideo(!showVideo);
+  };
   return (
     <>
       <h1 className="rec-h1" id="projects">
@@ -22,9 +27,10 @@ function Projects() {
           <div className="project-description">
             <p className="project-name">Jewelry Shop</p>
             <p className="dec">
-              My first first Javascript project, a jewelry shop that i did for
-              university, its so basic and its not responsive, but i decided to
-              add it to my portfolio to show how did I start with Javascript
+              This was my first JavaScript project, a jewelry shop application
+              created for a university assignment. While it's simple, I chose to
+              include it in my portfolio to demonstrate my early experience and
+              foundational skills in JavaScript.
             </p>
 
             <div className="project-buttons">
@@ -57,21 +63,22 @@ function Projects() {
           <div className="project-description">
             <p className="project-name">Design agency </p>
             <p className="dec">
-              A clone for a design company build using react, I was new to react
-              here and building websites here and there helped me to master this
-              library
+              A clone of a design company website, built with React and
+              integrated with APIs to fetch and display dynamic content. Only
+              the homepage is implemented and responsive, showcasing seamless
+              data integration and API handling.
             </p>
 
             <div className="project-buttons">
               <a
-                href="https://github.com/your-repo-link"
+                href="https://github.com/Mohammad-200/kiska"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github
               </a>
               <a
-                href="https://your-live-demo-link.com"
+                href="https://mohammad-200.github.io/kiska"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -91,20 +98,17 @@ function Projects() {
           <div className="project-description">
             <p className="project-name">Movie app with chatting system </p>
             <p className="dec">
-              My Graduation project, Build uing React, Node JS, Mongo DB and
-              Express, This is one of the biggest projects that I worked on with
-              a chat system functionality. The app is not hosted yet but I
-              included an introductional video and the source code.
+              My graduation project, developed using React, Node.js, MongoDB,
+              and Express, is one of the largest projects I’ve completed. It
+              includes a fully functional chat system. Although the app is not
+              yet hosted, I have provided an introductory video and the source
+              code to showcase its features and functionality.
             </p>
 
             <div className="project-buttons">
-              <a
-                href="https://github.com/your-repo-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
+              <button onClick={handleVideoToggle} className="video-button">
+                Video
+              </button>
               <a
                 href="https://your-live-demo-link.com"
                 target="_blank"
@@ -113,6 +117,17 @@ function Projects() {
                 Live Demo
               </a>
             </div>
+            {showVideo && (
+              <div className="video-overlay">
+                <button className="close-button" onClick={handleVideoToggle}>
+                  X
+                </button>
+                <video className="full-video" controls autoPlay>
+                  <source src="assets/cinema1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            )}
           </div>
         </div>
       </div>

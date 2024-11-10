@@ -30,8 +30,8 @@ function Experience() {
                 <div>
                   <h5>High-Profile Client Projects</h5>
                   <p>
-                    Developed interactive dashboards for clients like KTM and
-                    GasGas.
+                    Developed interactive web apps for clients like KTM and
+                    KISKA.
                   </p>
                 </div>
                 <div>

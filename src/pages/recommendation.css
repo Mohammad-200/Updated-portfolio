@@ -119,6 +119,9 @@
 }
 
 .glow-sentence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #555;
   font-size: 18px;
   text-align: center;
@@ -126,7 +129,7 @@
   margin-bottom: 10px;
   max-width: 500px;
   min-width: 400px;
-  animation: flickerGlow 2s infinite alternate;
+  animation: flickerGlow 1.5s infinite alternate;
 }
 
 @keyframes flickerGlow {

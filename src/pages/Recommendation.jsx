@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import "./recommendation.css";
 
 function Recommendation() {
@@ -45,7 +46,10 @@ function Recommendation() {
           </div>
         </div>
         <div className="rec-right">
-          <p className="glow-sentence">Click the letter to open it!</p>
+          <div className="glow-sentence">
+            <p>Click the letter to open it</p>
+            <MdKeyboardDoubleArrowDown />
+          </div>
           <div className="image-holder">
             <div className="cursor" onClick={openPdfModal}></div>
             <img
