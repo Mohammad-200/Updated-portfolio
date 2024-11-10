@@ -10,8 +10,8 @@ function Main() {
             <div>
               <label>Profile</label>
               <p>
-                Work for money and code for love! I'm Mohammad, a
-                <span> Full stack</span> developer based in Romania
+                Code is my passion, and solving problems is my drive. I’m
+                Mohammad, a <span> Full stack</span> Developer based in Romania.
               </p>
             </div>
             <div>

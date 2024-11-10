@@ -63,7 +63,7 @@ function Recommendation() {
         <div className="pdf-modal" onClick={closePdfModal}>
           <div className="pdf-content" onClick={(e) => e.stopPropagation()}>
             <embed
-              src="images/recommendation-letter.pdf"
+              src="assets/recommendation-letter.pdf"
               type="application/pdf"
               width="100%"
               height="100%"

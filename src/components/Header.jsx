@@ -42,9 +42,27 @@ function Header() {
       </div>
 
       <div className="personal-links">
-        <img src="images/email-logo2.jpg" />
-        <img src="images/github-logo.png" />
-        <img src="images/cv-logo3.jpg" />
+        <a
+          href="mailto:mohammad.kizawi@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/email-logo2.jpg" />
+        </a>
+        <a
+          href="https://github.com/Mohammad-200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/github-logo.png" alt="GitHub Profile" />
+        </a>
+        <a
+          href="assets/MOHAMMAD--KIZAWI-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/cv-logo3.jpg" />
+        </a>
       </div>
     </div>
   );
