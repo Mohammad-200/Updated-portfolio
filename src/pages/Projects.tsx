@@ -5,7 +5,9 @@ import { IoDiamond } from "react-icons/io5";
 function Projects() {
   return (
     <>
-      <h1 className="rec-h1">PROJECTS</h1>
+      <h1 className="rec-h1" id="projects">
+        PROJECTS
+      </h1>
       <div className="projects-container">
         <div className="main-line"></div>
 

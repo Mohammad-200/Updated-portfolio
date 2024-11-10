@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./header.css";
 import navListData from "../data/NaveItems";
 
 function Header() {
+  const [selectedTag, setSelectedTag] = useState(navListData);
+  const navRef = useRef();
+
+  const activateTag = (id) => {
+    setSelectedTag((prevTags) =>
+      prevTags.map((tag) => {
+        if (tag.id === id) {
+          return { ...tag, active: true };
+        } else {
+          return { ...tag, active: false };
+        }
+      })
+    );
+  };
   return (
     <div className="header-container">
       <div className="header-navigation">
-        <ul className="ul-nav">
+        <ul className="nav">
           {navListData.map((item) => (
-            <li key={item.id}>{item.name}</li>
+            <li key={item.id}>
+              <a
+                onClick={() => activateTag(item.id)}
+                className={item.active ? "active" : ""}
+                href={item.link}
+              >
+                {item.name}
+              </a>
+            </li>
           ))}
         </ul>
       </div>

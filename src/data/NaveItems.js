@@ -7,8 +7,8 @@ const navListData = [
   },
   {
     id: 2,
-    link: "#about",
-    name: "about",
+    link: "#experience",
+    name: "experience",
     active: false,
   },
   {
