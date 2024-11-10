@@ -110,7 +110,7 @@ function Projects() {
                 Video
               </button>
               <a
-                href="https://your-live-demo-link.com"
+                href="https://github.com/Mohammad-200/Cinema"
                 target="_blank"
                 rel="noopener noreferrer"
               >
