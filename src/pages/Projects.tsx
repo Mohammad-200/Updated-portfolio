@@ -28,9 +28,9 @@ function Projects() {
             <p className="project-name">Jewelry Shop</p>
             <p className="dec">
               This was my first JavaScript project, a jewelry shop application
-              created for a university assignment. While it's simple, I chose to
-              include it in my portfolio to demonstrate my early experience and
-              foundational skills in JavaScript.
+              created when I was a university student. I chose to include it in
+              my portfolio to demonstrate my early experience and foundational
+              skills in JavaScript.
             </p>
 
             <div className="project-buttons">
@@ -114,7 +114,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Github
               </a>
             </div>
             {showVideo && (
