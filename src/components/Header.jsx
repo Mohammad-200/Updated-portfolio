@@ -26,7 +26,7 @@ function Header() {
   const showNavBar = () => navRef.current.classList.toggle("responsive_nav");
 
   return (
-    <div className="header-container">
+    <div className="header-container" id="nav">
       <div className="header-navigation">
         <ul className="nav" ref={navRef}>
           <button onClick={showNavBar} className="nav-btn nav-close-button">

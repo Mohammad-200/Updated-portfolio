@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import LiftToTop from "./components/LiftToTop";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
 import Main from "./pages/Main";
@@ -15,6 +16,7 @@ function App() {
       <Recommendation />
       <Projects />
       <Contact />
+      <LiftToTop />
     </>
   );
 }
