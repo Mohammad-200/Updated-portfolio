@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import "./projects.css";
 import { IoDiamond } from "react-icons/io5";
+import { SiThemoviedatabase } from "react-icons/si";
 
 function Projects() {
-  const [showVideo, setShowVideo] = useState(false);
-
-  const handleVideoToggle = () => {
-    setShowVideo(!showVideo);
-  };
   return (
     <>
       <h1 className="rec-h1" id="projects">
@@ -55,30 +51,35 @@ function Projects() {
         <div className="project-details">
           <div className="project-info">
             <div className="circle">
-              <IoDiamond className="diamond-icon" />
+              <SiThemoviedatabase className="diamond-icon" />
             </div>
-            <p className="project-date right-margin">October 2022</p>
+            <p className="project-date right-margin">July 2024</p>
           </div>
 
           <div className="project-description">
-            <p className="project-name">Design agency </p>
+            <p className="project-name">Movie app with chatting system </p>
             <p className="dec">
-              A clone of a design company website, built with React and
-              integrated with APIs to fetch and display dynamic content. Only
-              the homepage is implemented and responsive, showcasing seamless
-              data integration and API handling.
+              My <span className="bold">graduation project</span>, developed
+              using React, Node.js, MongoDB, and Express, is one of the largest
+              projects I’ve completed. It includes a fully functional live chat
+              system using Socket.io and is connected to an online API to
+              provide more than 10,000 movies.{" "}
+              <span style={{ color: "red" }}>
+                Please wait around 50 seconds when you launch the app until the
+                backend reloads.
+              </span>
             </p>
 
             <div className="project-buttons">
               <a
-                href="https://github.com/Mohammad-200/kiska"
+                href="https://github.com/Mohammad-200/Cinema"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github
               </a>
               <a
-                href="https://mohammad-200.github.io/kiska"
+                href="https://mohammad-200.github.io/Cinema"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -87,7 +88,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project-details">
+        {/* <div className="project-details">
           <div className="project-info">
             <div className="circle">
               <IoDiamond className="diamond-icon" />
@@ -106,9 +107,7 @@ function Projects() {
             </p>
 
             <div className="project-buttons">
-              <button onClick={handleVideoToggle} className="video-button">
-                Video
-              </button>
+              <button className="video-button">Video</button>
               <a
                 href="https://github.com/Mohammad-200/Cinema"
                 target="_blank"
@@ -117,19 +116,8 @@ function Projects() {
                 Github
               </a>
             </div>
-            {showVideo && (
-              <div className="video-overlay">
-                <button className="close-button" onClick={handleVideoToggle}>
-                  X
-                </button>
-                <video className="full-video" controls autoPlay>
-                  <source src="assets/cinema1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            )}
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="end-line"></div>
     </>
